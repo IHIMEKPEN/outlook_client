@@ -1,0 +1,10 @@
+/* Input.css */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 0px;
+    font-size: 16px;
+  }
+  
