@@ -1,9 +1,11 @@
-import React from 'react';
-import Form from './Form';
-import './Login.css';
+import React from "react";
+import Form from "./Form";
+import "./Login.css";
+import { VscArrowLeft } from "react-icons/vsc";
 
-
-const Login: React.FC = () => {
+const Login: React.FC<any> = () => {
+  const [step, setStep] = React.useState<number>(0);
+  const [email, setEmail] = React.useState<string>("");
   return (
     <div className="login-container">
       <div className="login-header">
@@ -12,10 +14,37 @@ const Login: React.FC = () => {
           alt="Microsoft Logo"
           className="logo login-logo"
         />
-        <h2>Sign in</h2>
-        <p>to continue to Outlook</p>
+        {step == 0 && (
+          <>
+            <h2>Sign in</h2>
+            <p>to continue to Outlook</p>
+          </>
+        )}
+        {step == 1 && (
+          <>
+            <h6>
+              <VscArrowLeft
+                style={{ marginRight: ".7rem", cursor: "pointer",fontSize:'1.2rem' }}
+                onClick={() => {
+                  setStep(0);
+                }}
+              />
+              {email}
+            </h6>
+            <h2>Enter password</h2>
+          </>
+        )}
       </div>
-      <Form />
+      <Form
+        step={step}
+        stepChange={(v: number) => {
+          setStep(v);
+        }}
+        emailChange={(v: string) => {
+          console.log(v)
+          setEmail(v);
+        }}
+      />
     </div>
   );
 };
