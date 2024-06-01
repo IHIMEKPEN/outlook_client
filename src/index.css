@@ -2,7 +2,9 @@
 body {
   font-family: Arial, sans-serif;
 }
-
+*{
+  transition: .3s ease-in-out;
+}
 .login-container {
   width: 300px;
   margin: 100px auto;

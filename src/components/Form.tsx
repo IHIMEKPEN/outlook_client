@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import Input from './Input';
-import './Form.css';
+import React, { useState } from "react";
+import Input from "./Input";
+import "./Form.css";
 
 const Form: React.FC = () => {
-  const [email, setEmail] = useState<string>('');
+  const [email, setEmail] = useState<string>("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
-    console.log('Submitted email:', email);
+    console.log("Submitted email:", email);
   };
 
   return (
@@ -19,9 +19,14 @@ const Form: React.FC = () => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-      <button type="submit" className="next-button">Next</button>
+
       <div className="additional-options">
-        <a href="/create-account">No account? Create one!</a>
+        <p>
+          No account? <a href="/create-account">Create one!</a>
+        </p>
+        <button type="submit" className="next-button">
+          Next
+        </button>
         {/* <button type="button">Sign-in options</button> */}
       </div>
     </form>

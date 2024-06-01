@@ -1,48 +1,55 @@
 /* Form.css */
 form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .next-button {
-    padding: 10px 20px;
-    background: #0078d4;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    align-self: flex-start;
-  }
-  .next-button:hover {
-    background: #005a9e;
-  }
-  
-  .additional-options {
-    margin-top: 20px;
-    text-align: left;
-    width: 100%;
-  }
-  
-  .additional-options a,
-  .additional-options button {
-    display: block;
-    color: #0078d4;
-    text-decoration: none;
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+}
+
+.additional-options .next-button {
+  padding: 10px 20px;
+  background: #0078d4;
+  border: none;
+  color: white;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: .9rem;
+  margin-top: 2rem;
+  float: right;
+  align-self: flex-end;
+  max-width: 8rem;
+}
+.next-button:hover {
+  background: #005a9e;
+}
+
+.additional-options {
+  margin-top: 10px;
+  text-align: left;
+  width: 100%;
+}
+/* ,
+  .additional-options button  */
+.additional-options a {
+  display: block;
+  color: #0078d4;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: .8rem;
+  display: inline-block;
+}
+.additional-options p {
+  font-size: .8rem;
+  margin: 0px;
+}
+/*   
   .additional-options button {
     background: none;
     border: none;
     cursor: pointer;
     padding: 0;
-  }
-  
-  .additional-options button:hover,
-  .additional-options a:hover {
-    text-decoration: underline;
-  }
-  
+
+  } */
+
+/* .additional-options button:hover, */
+.additional-options a:hover {
+  text-decoration: underline;
+}

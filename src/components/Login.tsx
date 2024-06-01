@@ -2,6 +2,7 @@ import React from 'react';
 import Form from './Form';
 import './Login.css';
 
+
 const Login: React.FC = () => {
   return (
     <div className="login-container">
@@ -9,7 +10,7 @@ const Login: React.FC = () => {
         <img
           src="https://logincdn.msftauth.net/shared/5/images/microsoft_logo_ee5c8d9fb6248c938fd0.svg"
           alt="Microsoft Logo"
-          className="logo"
+          className="logo login-logo"
         />
         <h2>Sign in</h2>
         <p>to continue to Outlook</p>

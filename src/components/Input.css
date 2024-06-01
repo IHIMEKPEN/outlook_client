@@ -1,10 +1,18 @@
 /* Input.css */
 .input-field {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 10px;
-    /* border: 1px solid #ccc; */
-    border-radius: 0px;
-    font-size: 16px;
-  }
-  
+  width: 100%;
+  padding: 9px 9px 9px 0px;
+  margin-bottom: 5px;
+  /* border: 1px solid #ccc; */
+  border-radius: 0px;
+  font-size: 1rem;
+  border-bottom: 1px solid #303030;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+.input-field:focus {
+
+  border-color: #1a2da9 ;
+}

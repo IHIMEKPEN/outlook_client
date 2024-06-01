@@ -31,7 +31,48 @@ img {
 }
 
 @media screen and (max-width: 600px), screen and (max-height: 366px) {
-  .outlook-header  {
-      margin-top: 24px;
+  .outlook-header {
+    margin-top: 24px;
   }
+}
+.outlook-logo {
+  height: 2.25rem;
+  margin-bottom: 1.3rem;
+}
+.app-container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.app-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: auto;
+  margin: 3rem 1rem;padding: 1rem;
+}
+.background-container {
+  background-color: rgb(242, 242, 242);
+  background-position-y: 50%;
+  background-position-x: 50%;
+  background-repeat: cover;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  position: fixed;
+  background-size: cover;
+  background-image: url("./assets/img/gradient-bg.jpeg");
+  opacity: 85%;
+}
+.app-content > div{
+box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px;
+width: 29rem;
+
 }
